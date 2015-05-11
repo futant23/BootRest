@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package rtsw.toolsteam.bootrest.service.web;
+package rtsw.toolsteam.bootrest.web;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

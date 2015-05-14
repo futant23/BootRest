@@ -27,14 +27,14 @@ public class WeatherService {
 
     private final static Logger log = LoggerFactory.getLogger(WeatherService.class);
 
-    @Value(value = "${proxy.host}")
+    @Value("${proxy.host}")
     private String proxyHost;
 
-    @Value(value = "${proxy.port}")
+    @Value("${proxy.port}")
     private Integer proxyPort;
 
-    @Value(value = "${proxy.required}")
-    private Boolean proxyRequired;
+    @Value("${proxy.required}")
+    private boolean proxyRequired;
 
     public WeatherService() {
     }

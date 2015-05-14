@@ -34,7 +34,7 @@ public class WeatherService {
     private Integer proxyPort;
 
     @Value("${proxy.required}")
-    private boolean proxyRequired;
+    private Boolean proxyRequired;
 
     public WeatherService() {
     }

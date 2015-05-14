@@ -19,7 +19,7 @@ public class Current {
     
     private City city;
     
-    private Temperature temp;
+    private Temperature temperature;
     
     private Humidity humidity;
     
@@ -37,9 +37,9 @@ public class Current {
     
     public Current() {}
 
-    public Current(City city, Temperature temp, Humidity humidity, Pressure pressure, Wind wind, Clouds clouds, Precipitation precip, Weather weather, LastUpdate lastupdate) {
+    public Current(City city, Temperature temperature, Humidity humidity, Pressure pressure, Wind wind, Clouds clouds, Precipitation precip, Weather weather, LastUpdate lastupdate) {
         this.city = city;
-        this.temp = temp;
+        this.temperature = temperature;
         this.humidity = humidity;
         this.pressure = pressure;
         this.wind = wind;
@@ -60,13 +60,15 @@ public class Current {
         this.city = city;
     }
 
-    public Temperature getTemp() {
-        return temp;
+    public Temperature getTemperature() {
+        return temperature;
     }
 
-    public void setTemp(Temperature temp) {
-        this.temp = temp;
+    public void setTemperature(Temperature temperature) {
+        this.temperature = temperature;
     }
+
+   
 
     public Humidity getHumidity() {
         return humidity;
@@ -126,8 +128,6 @@ public class Current {
 
     @Override
     public String toString() {
-        return "Current{" + "city=" + city + ", temp=" + temp + ", humidity=" + humidity + ", pressure=" + pressure + ", wind=" + wind + ", clouds=" + clouds + ", precip=" + precip + ", weather=" + weather + ", lastupdate=" + lastupdate + '}';
+        return "Current{" + "city=" + city + ", temperature=" + temperature + ", humidity=" + humidity + ", pressure=" + pressure + ", wind=" + wind + ", clouds=" + clouds + ", precip=" + precip + ", weather=" + weather + ", lastupdate=" + lastupdate + '}';
     }
- 
-    
 }
